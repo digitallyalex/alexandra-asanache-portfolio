@@ -1,3 +1,12 @@
+/* universal styles */
+:root {
+--background-color: #FFF9F3;
+--main-color: #CB4D00;
+--secondary-color: #38548F;
+--accent-color: #D3E2F3;
+--box-colors: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,9 +14,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  background-color: var(--background-color);
 }
+
+/* default text styles */
 
 h1,
 h2,
@@ -16,8 +28,113 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: var(--main-color);
+  font-weight: bolder;
 }
 
 p {
   margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: -1.2rem;
+  margin-left: -1rem;
+  font-size: 35px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--main-color);
+  width: 25%
+}
+
+/* section text boxes and titles */
+
+.page-section {
+
+}
+
+.text-box {
+  color: var(--secondary-color);
+  background-color: var(--box-colors);
+  padding: 5px;
+  text-wrap: wrap;
+}
+
+.text-title-section {
+
+}
+/* default styles for mobile */
+
+  /* nav bar styling */
+header {
+  text-align: start;
+  margin: 1rem;
+  font-size: 1.5rem;
+  word-wrap: normal;
+  line-height: 0.9;
+}
+
+#sub-header{
+  margin-top: -0.5rem;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  background-color: var(--box-colors);
+  padding: 10px
+}
+
+nav {
+  color: var(--main-color);
+  text-align: center;
+
+}
+
+header a {
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+
+  /* hero banner styling */
+
+.hero {
+  background-image: url(/images/wideHeroImage.png);
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+  /* about me section styles */
+#about {
+  display: flex;
+}
+
+  /* work section styles */
+  #work {
+
+}
+
+  /* contact section styles */
+#contact {
+
+}
+
+  /* footer styles */
+footer {
+
+}
+
+  /* Media query for tablets */
+@media (min-width: 768px) {
+
+}
+
+
+  /* Media query for desktops */
+@media (min-width: 1024px) {
+
 }
