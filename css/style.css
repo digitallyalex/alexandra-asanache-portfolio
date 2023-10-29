@@ -52,10 +52,6 @@ hr {
 
 /* section text boxes and titles */
 
-.page-section {
-
-}
-
 .text-box {
   color: var(--secondary-color);
   background-color: var(--box-colors);
@@ -111,30 +107,122 @@ header a {
   /* about me section styles */
 #about {
   display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+#profile-image {
+  height: 18rem;
+  width: 18rem;
+  order: 1;
 }
 
   /* work section styles */
-  #work {
-
+div img {
+  width: 90%;
+  align-items: center;
 }
 
   /* contact section styles */
-#contact {
+#contact-links {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-align: center;
+}
 
+#contact a {
+  color: var(--main-color);
+  font-weight: lighter;
 }
 
   /* footer styles */
 footer {
-
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: smaller;
 }
 
   /* Media query for tablets */
 @media (min-width: 768px) {
+  
+  /* about section */
+  #about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #about-box {
+    width: 60%;
+  }
+
+  #profile-image {
+    height: 14rem;
+    width: 14rem;
+    order: 2;
+  }
+
+  /* work section */
+.work-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "item-1 item-2" 
+  "item-1 item-3" 
+  "item 1 item-4";
+  border: 1px dashed var(--main-color);
+  align-items: start;
+}
+
+/* div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#feature-project {
+  grid-area: item-1;
+}
+
+#secondary-project-1 {
+  grid-area: item-2;
+}
+
+#secondary-project-2 {
+  grid-area: item-3;
+}
+
+#secondary-project-3 {
+  grid-area: item-4;
+}
+
+div img {
+  width: 50%;
+}
+}
+
+/* Media query for desktop */
+@media (min-width: 1025px) {
+
+  /* about section */
+  #about-box {
+    width: 70%;
+  }
+
+  /* work section  */
 
 }
 
+@media (min-width: 1281px) {
 
-  /* Media query for desktops */
-@media (min-width: 1024px) {
+  /* about section */
+  #about-box {
+    width: 75%;
+  }
+
+  /* work section */
 
 }
