@@ -116,74 +116,57 @@ header a {
 }
 
   /* work section styles */
-
-/* project name and skills label */
-#container {
-  display: grid;
-  grid-template-columns: 1fr 40%;
-  grid-template-areas: 
-      "projectOne projectTwo"
-      "projectOne projectThree"
-      "projectOne projectFour";
-  grid-gap: 10px;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  article {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-grow: auto;
+    margin: 40px;
+    gap: 10px;
 }
 
 .project {
-  border: 2px solid var(--main-color);
-  border-radius: 5px;
-  margin: 1rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    border: 1px solid var(--main-color);
+    width: 90rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
 }
 
-#projectOne { 
-  grid-area: projectOne;
-  height: 700px;
-  width: auto;
-  background-image: url(/images/cssSnippetCheatsheetWide.png);
+#projectOne {
+    border: 1px solid var(--main-color);
+    width: 90rem;
+    height: 20rem;
+    background-image: url(/images/webUpDigitalMarketing.png);
 }
 
 #projectTwo {
-  grid-area: projectTwo;
-  height: auto;
-  width: auto;
-  background-image: url(/images/jakesEateryWide.png);
+    background-image: url(/images/cssSnippetCheatsheetWide.png);
 }
 
 #projectThree {
-  grid-area: projectThree;
-  height: auto;
-  width: auto;
-  background-image: url(/images/webUpDigitalMarketing.png);
+    background-image: url(/images/jakesEateryWide.png);
 }
 
 #projectFour {
-  grid-area: projectFour;
-  height: auto;
-  width: auto;
-  background-image: url(/images/studyGuide.png);
+    background-image: url(/images/webUpDigitalMarketing.png);
 }
 
 .label {
-  font-size: large;
-  font-weight: bold;
-  padding: 0 1rem;
-  margin: 0;
-  color: var(--secondary-color);
-  background-color: var(--transparent-box);
-  position: absolute;
-  width: 250px;
-  height: 70px;
+ font-size: 1rem;
+ font-weight: bold;
+ color: var(--secondary-color);
+ background-color: var(--transparent-box);
+ width:auto;
+ margin-top: 0;
 }
 
 .label a {
-  color: var(--main-color);
-  font-size: larger;
+    color: var(--main-color);
+    font-weight: bolder;
 }
+
 
   /* contact section styles */
 #contact-links {
@@ -204,8 +187,8 @@ footer {
   font-size: smaller;
 }
 
-  /* Media query for tablets */
-@media (min-width: 768px) {
+  /* Breakpoint One / Smaller tablets */
+@media (min-width: 800px) {
   
   /* about section */
   #about {
@@ -225,24 +208,41 @@ footer {
     width: 14rem;
     order: 2;
   }
-}
+
   /* work section */
+  .project {
+    width: 14.6rem;
+    height: 15rem;
+    flex-grow: 1;
+}
+
+#projectOne {
+    width: 45rem;
+    height: 30rem;
+}
+
+}
+  
 
 
-
-/* Media query for desktop */
-@media (min-width: 1025px) {
+/* Breakpoint Two / larger tablets, small laptops */
+@media (min-width: 1000px) {
 
   /* about section */
   #about-box {
     width: 70%;
   }
 
-  /* work section  */
+  /* work section */
+  #projectOne {
+    width: 70rem;
+}
+
 
 }
 
-@media (min-width: 1281px) {
+/* Breakpoint Three / Average laptops and desktops */
+@media (min-width: 1270px) {
 
   /* about section */
   #about-box {
@@ -250,5 +250,16 @@ footer {
   }
 
   /* work section */
+  #projectOne {
+    width: 78rem;
+}
+}
 
+/* Breakpoint Four / Larger desktops and screens */
+@media only screen and (min-width: 1525px) {
+
+  /* work section */
+  #projectOne {
+      width: 100rem;
+  }
 }
