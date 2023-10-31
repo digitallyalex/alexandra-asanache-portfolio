@@ -1,11 +1,11 @@
 /* universal styles */
 :root {
---background-color: #FFF9F3;
---main-color: #CB4D00;
---secondary-color: #38548F;
---accent-color: #D3E2F3;
---box-colors: white;
---transparent-box: 	hsl(0, 0%, 100%, 0.9);
+  --background-color: #FFF9F3;
+  --main-color: #CB4D00;
+  --secondary-color: #38548F;
+  --accent-color: #D3E2F3;
+  --box-colors: white;
+  --transparent-box: hsl(0, 0%, 100%, 0.9);
 }
 
 * {
@@ -57,12 +57,11 @@ hr {
   text-wrap: wrap;
 }
 
-.text-title-section {
+.text-title-section {}
 
-}
 /* default styles for mobile */
 
-  /* nav bar styling */
+/* nav bar styling */
 header {
   text-align: start;
   margin: 1rem;
@@ -71,7 +70,7 @@ header {
   line-height: 0.9;
 }
 
-#sub-header{
+#sub-header {
   margin-top: -0.5rem;
   font-size: 1.3rem;
   color: var(--secondary-color);
@@ -91,7 +90,7 @@ header a {
 }
 
 
-  /* hero banner styling */
+/* hero banner styling */
 
 .hero {
   background-image: url(/images/wideHeroImage.png);
@@ -102,7 +101,7 @@ header a {
   background-position: center;
 }
 
-  /* about me section styles */
+/* about me section styles */
 #about {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -115,60 +114,66 @@ header a {
   order: 1;
 }
 
-  /* work section styles */
-  article {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    flex-grow: auto;
-    margin: 40px;
-    gap: 10px;
+/* work section styles */
+article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-grow: auto;
+  margin: 40px;
+  gap: 10px;
 }
 
 .project {
-    border: 1px solid var(--main-color);
-    width: 90rem;
-    height: 15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+  border: 1px solid var(--main-color);
+  width: 90rem;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* project hover effect */
+.project:hover {
+  box-shadow: inset 0px 0px 8px var(--main-color), 0 0 15px var(--main-color);
 }
 
 #projectOne {
-    border: 1px solid var(--main-color);
-    width: 90rem;
-    height: 20rem;
-    background-image: url(/images/webUpDigitalMarketing.png);
+  border: 1px solid var(--main-color);
+  width: 90rem;
+  height: 20rem;
+  background-image: url(/images/webUpDigitalMarketing.jpg);
 }
 
 #projectTwo {
-    background-image: url(/images/cssSnippetCheatsheetWide.png);
+  background-image: url(/images/cssSnippetCheatsheet.jpg);
 }
 
 #projectThree {
-    background-image: url(/images/jakesEateryWide.png);
+  background-image: url(/images/jakesEatery.jpg);
 }
 
 #projectFour {
-    background-image: url(/images/webUpDigitalMarketing.png);
+  background-image: url(/images/studyGuide.jpg);
 }
 
 .label {
- font-size: 1rem;
- font-weight: bold;
- color: var(--secondary-color);
- background-color: var(--transparent-box);
- width:auto;
- margin-top: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  background-color: var(--transparent-box);
+  width: auto;
+  margin-top: 0;
+  padding: 10px
 }
 
 .label a {
-    color: var(--main-color);
-    font-weight: bolder;
+  color: var(--main-color);
+  font-weight: bolder;
 }
 
 
-  /* contact section styles */
+/* contact section styles */
 #contact-links {
   color: var(--secondary-color);
   font-weight: bold;
@@ -180,16 +185,16 @@ header a {
   font-weight: lighter;
 }
 
-  /* footer styles */
+/* footer styles */
 footer {
   color: var(--secondary-color);
   text-align: center;
   font-size: smaller;
 }
 
-  /* Breakpoint One / Smaller tablets */
+/* Breakpoint One / Smaller tablets */
 @media (min-width: 800px) {
-  
+
   /* about section */
   #about {
     display: flex;
@@ -214,19 +219,19 @@ footer {
     width: 14.6rem;
     height: 15rem;
     flex-grow: 1;
-}
+  }
 
-#projectOne {
+  #projectOne {
     width: 45rem;
     height: 30rem;
-}
+  }
 
 }
-  
+
 
 
 /* Breakpoint Two / larger tablets, small laptops */
-@media (min-width: 1000px) {
+@media (min-width: 1015px) {
 
   /* about section */
   #about-box {
@@ -236,7 +241,7 @@ footer {
   /* work section */
   #projectOne {
     width: 70rem;
-}
+  }
 
 
 }
@@ -252,7 +257,7 @@ footer {
   /* work section */
   #projectOne {
     width: 78rem;
-}
+  }
 }
 
 /* Breakpoint Four / Larger desktops and screens */
@@ -260,6 +265,6 @@ footer {
 
   /* work section */
   #projectOne {
-      width: 100rem;
+    width: 100rem;
   }
 }
