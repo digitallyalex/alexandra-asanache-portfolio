@@ -93,7 +93,7 @@ header a {
 /* hero banner styling */
 
 .hero {
-  background-image: url(/images/wideHeroImage.png);
+  background-image: url(images/wideHeroImage.png);
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
@@ -146,19 +146,19 @@ article {
   border: 1px solid var(--main-color);
   width: 90rem;
   height: 20rem;
-  background-image: url(/images/webUpDigitalMarketing.jpg);
+  background-image: url(images/webUpDigitalMarketing.jpg);
 }
 
 #projectTwo {
-  background-image: url(/images/cssSnippetCheatsheet.jpg);
+  background-image: url(images/cssSnippetCheatsheet.jpg);
 }
 
 #projectThree {
-  background-image: url(/images/jakesEatery.jpg);
+  background-image: url(images/jakesEatery.jpg);
 }
 
 #projectFour {
-  background-image: url(/images/studyGuide.jpg);
+  background-image: url(images/studyGuide.jpg);
 }
 
 .label {
