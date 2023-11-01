@@ -108,6 +108,10 @@ header a {
   justify-content: center;
 }
 
+.text-box a {
+  color: var(--main-color);
+}
+
 #profile-image {
   height: 18rem;
   width: 18rem;
